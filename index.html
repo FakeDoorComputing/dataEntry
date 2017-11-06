@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta charset="UTF-8">
+	  <title>Untitled Document</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/index.js"></script>
+  </head>
+
+  <body>
+    <div data-role="page" id="pageone">
+      <div data-role="header">Header</div>
+      <div role="main" class="ui-content">
+        <form action="javascript:submitData()">
+        <p>Name</p>
+  	    <input type="text" id="nameInput" value="" required/>
+        <p>sex</p>
+        <select id="sexInput" data-mini="true">
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+          <option value="other">Other</option>
+          <option value="na">Prefer not to say</option>
+        </select>
+        <p>email</p>
+        <input type="text" id="emailInput" value="" required/>
+        <p>Telephone Number</p>
+        <input type="text" id="numberInput" value="" required/>
+        <p>Age</p>
+        <input type="range" id="ageInput" min="0" max="120" required/>
+        <p>Password</p>
+        <input type="text" id="pwdInput" value="" required/>
+        <button>Submit</button>
+      </form>
+      </div>
+      <div data-role="footer">Footer</div>
+    </div>
+  </body>
+</html>
